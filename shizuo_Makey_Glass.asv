@@ -1,0 +1,14 @@
+tau = 30;
+history = 0.5;
+tapan = 1:1000;
+sol = dde23(@Makey_Glass,tau,history,tapan);
+t = sol.x;
+data = sol.y;
+
+[ACF]autocorr(data,size(data,2)-1);
+
+function dx=Makey_Glass(t,x,T)
+[a,b,c] = deal(0.2,10,0.1);
+tau = T;
+dx = (a*tau)/(1+tau^b)-c*x;
+end

@@ -1,0 +1,19 @@
+小数据量法计算 Lyapunov 指数的 Matlab 程序 - (mex 函数，超快)
+
+----------------------------------------------
+参考文献：
+Michael T.Rosenstein,
+"A practical method for calculating largest lyapunov exponents from small sets",
+Physica D,1993,65: 117-134
+
+文件说明：
+----------------------------------------------
+Main_LargestLyapunov_Rosenstein1.m 	程序主文件1,直接运行此文件即可,Logistic 序列
+Main_LargestLyapunov_Rosenstein2.m	程序主文件2,直接运行此文件即可,Henon 序列
+Main_LargestLyapunov_Rosenstein3.m	程序主文件3,直接运行此文件即可,Lorenz 吸引子
+LorenzData.dll				        产生 Lorenz 离散序列
+PhaSpaRecon.m				        相空间重构
+Lyapunov_rosenstein_2.dll		    Lyapunov 计算主函数
+buffer_run1.dll 			        计算缓存1
+buffer_run2.dll				        计算缓存2
+buffer_run3.dll				        计算缓存3
